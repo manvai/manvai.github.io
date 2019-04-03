@@ -69,11 +69,9 @@
 	<script>
 		if ('addEventListener' in window) {
 			window.addEventListener('load', function() {
-				document.body.className = document.body.className.replace(
-						/\bis-preload\b/, '');
+				document.body.className = document.body.className.replace(/\bis-preload\b/, '');
 			});
-			document.body.className += (navigator.userAgent
-					.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 		}
 	</script>
 
@@ -82,17 +80,11 @@
 
 			if (frogueReadyFlag) {
 				if (v === 'info') {
-					froguePushEvent('clickEvent', {
-						'name' : 'info'
-					});
+					froguePushEvent('clickEvent', {'name' : 'info'});
 				} else if (v === 'map') {
-					froguePushEvent('clickEvent', {
-						'name' : 'map'
-					});
+					froguePushEvent('clickEvent', {'name' : 'map'});
 				} else if (v === 'contact') {
-					froguePushEvent('clickEvent', {
-						'name' : 'contact'
-					});
+					froguePushEvent('clickEvent', {'name' : 'contact'});
 				}
 			}
 
@@ -107,7 +99,7 @@
 			}
 			js = d.createElement(s);
 			js.id = id;
-			js.src = "https:\/\/55danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
+			js.src = "https:\/\/danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'frogue-embed'));
 	</script>
