@@ -13,9 +13,60 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	
-	<body>
-		a
-	</body>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="https://danbee.ai/platform/img/chatbot/img_profile_db_1.png" alt="" /></span>
+							<h1>SRM 챗봇 테스트</h1>
+							<p>포탈 화면 임베드 테스트</p>
+						</header>
+						<hr />
+						<h2>저는 이런 챗봇이에요.</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									페르소나1
+								</div>
+								<div class="field">
+									페르소나2
+								</div>
+								<div class="field">
+									페르소나3
+								</div>
+							</div>
+							
+						</form>
+						<hr />
+						<footer>
+							<ul class="icons">
+								<li><a href="javascript:click('info')" class="fa-info-circle">소개</a></li>
+								<li><a href="javascript:click('map')" class="fa-map">위치</a></li>
+								<li><a href="javascript:click('contact')" class="fa-envelope-open-o">Contact</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Study</li><li>Design: <a href="https://danbee.ai">danbee.Ai</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
 			<div id="frogue-container" class="position-right-bottom"
 				data-chatbot="bd936948-d906-4921-8435-d0183aaa0e1f"
