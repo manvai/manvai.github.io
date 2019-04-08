@@ -9,6 +9,22 @@
 </frameset>
 <noframes>
 <body>
+  	<div id="frogue-container" class="position-right-bottom"
+		data-chatbot="bd936948-d906-4921-8435-d0183aaa0e1f" data-user="me">
+	</div>
+
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https:\/\/danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'frogue-embed'));
+	</script>
 </body>
 </noframes>
 </html>
