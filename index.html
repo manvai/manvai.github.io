@@ -77,19 +77,10 @@
 	</script>
 	<script>
 		function openPop(arg1, arg2){
-    			var frmPop= document.frmPopup;
-			var width = 500;
-			var height = 720;
-			var leftPosition = (screen.width-width) / 1.5;
-			var topPosition = (screen.height-height) / 2.5;
-			var url = 'chatbot.html';
-
-			window.open(url,'popupView','location=no,scrollbars=yes,menubar=no,width='+width+',height='+height+',top='+topPosition+',left='+leftPosition);
-    			frmPop.action = url;
-			frmPop.target = 'popupView';
-    			frmPop.arg1.value = arg1;
-    			frmPop.arg2.value = arg2;
-    			frmPop.submit();
+	        	window.name = "parentForm";
+            		// window.open("open할 window", "자식창 이름", "팝업창 옵션");
+            		var child = window.open("chatbot.html", "childForm", "width=540, height=720, resizable = no, scrollbars = no");
+			child.document.getElementById("childText").value = arg1;
 		}
 	</script>
 </body>
