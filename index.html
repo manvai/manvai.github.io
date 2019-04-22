@@ -73,6 +73,22 @@
 			}
 			return false;
 		}
+		function open_pop(arg1, arg2){
+    			var frmPop= document.frmPopup;
+    			var url = 'popup.php';
+			var width = 500;
+			var height = 720;
+			var leftPosition = (screen.width-width) / 1.5;
+			var topPosition = (screen.height-height) / 2.5;
+			
+    			window.open('chatbot.html','popupView','location=no,scrollbars=yes,menubar=no,width='+width+',height='+height+',top='+topPosition+',left='+leftPosition);
+			
+    			frmPop.action = url;
+    			frmPop.target = 'popupView';
+    			frmPop.arg1.value = arg1;
+    			frmPop.arg2.value = arg2;
+    			frmPop.submit();
+		}
 	</script>
 </body>
 </html>
